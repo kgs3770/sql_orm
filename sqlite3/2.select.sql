@@ -31,7 +31,7 @@ WHERE year <2000 OR year > 2010;
 SELECT TITLE, MAX(year) FROM movies_movie;
 
 -- User.objects.aggregate(Avg('age')) =나이 평균값
-SELECT AVG(age) FROM movie_user;
+SELECT AVG(age) FROM movies_user;
 
 -- Score.objects.filter(movie_id=1).aggregate(Max('value'), Avg('value')) =1번영화의 평균평점, 최고점
 SELECT MAX(value), AVG(value) FROM movies_score
