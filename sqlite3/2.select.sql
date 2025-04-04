@@ -60,7 +60,7 @@ WHERE title LIKE '%on.';
 SELECT * FROM movies_movie
 WHERE title LIKE '%g__d%';
 
---User.objects.values('contry').distinct().count =중복 제거 후 카운트 코드
+--User.objects.values('contry').distinct().count =중복 제거 후 카운트
 SELECT COUNT(DISTINCT country) FROM movies_user;
 
 -- User.objects.filter(age__range=[20, 29]) =나이 20-29인 유저 출력
